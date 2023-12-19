@@ -10,6 +10,14 @@ int main (){
 	dest.open("cheerbook_copy.txt");
 	
 	//กรอก Code เฉพาะส่วนนี้ ให้สอดคล้องกับโจทย์และ Code ส่วนอื่น ๆ 
+    dest << "-------------------- BOOM ---------------------" << endl;
+	
+	string line;
+    while (getline(source, line)) {
+        dest << line << endl;
+    }
+
+	dest << "-------------------- HA!! ---------------------" << endl;
 	//โดยห้ามแก้ไข Code ในส่วนอื่น ๆ
 
     source.close();
